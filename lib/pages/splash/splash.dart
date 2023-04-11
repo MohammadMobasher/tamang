@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:tamang/core/settings/app_route.dart';
 
 class Splash extends StatelessWidget {
   const Splash({super.key});
 
   @override
   Widget build(BuildContext context) {
+    Future.delayed(const Duration(seconds: 2), () async {
+      Get.offNamed(AppRoute.welcome);
+    });
     return SafeArea(
       child: Scaffold(
         body: Stack(
@@ -44,55 +48,6 @@ class Splash extends StatelessWidget {
                     "assets/images/person_with_ice.svg",
                     width: 214.w,
                     height: 244.h,
-                  ),
-                  SizedBox(
-                    height: 41.h,
-                  ),
-                  const Text(
-                    "Welcome",
-                    style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
-                  ),
-                  SizedBox(
-                    height: 24.h,
-                  ),
-                  Container(
-                    width: 327.w,
-                    padding: EdgeInsets.symmetric(horizontal: 20.sp),
-                    child: const Text(
-                      "It’s a pleasure to meet you. We are excited that you’re here so let’s get started!",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 16,
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 60.h,
-                  ),
-                  SizedBox(
-                    width: Get.width,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                          padding: EdgeInsets.symmetric(vertical: 17.sp, horizontal: 60.sp),
-                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                          backgroundColor: const Color(0xffEEA734),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.sp),
-                          )),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 25.sp,
-                        ),
-                        child: Text(
-                          "GET STARTED",
-                          style: TextStyle(
-                            fontSize: 17.sp,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
                   ),
                 ],
               ),
