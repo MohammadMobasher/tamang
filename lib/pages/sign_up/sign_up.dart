@@ -278,9 +278,7 @@ class SignUp extends StatelessWidget {
               SizedBox(
                 width: Get.width,
                 child: ElevatedButton(
-                  onPressed: () {
-                    // Get.offNamed(AppRoute.walkthrough);
-                  },
+                  onPressed: () {},
                   style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(vertical: 12.sp, horizontal: 16.sp),
                       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
