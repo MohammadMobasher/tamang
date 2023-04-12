@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:tamang/core/settings/app_route.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -72,7 +73,9 @@ class Welcome extends StatelessWidget {
                   SizedBox(
                     width: Get.width,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed(AppRoute.walkthrough);
+                      },
                       style: ElevatedButton.styleFrom(
                           padding: EdgeInsets.symmetric(vertical: 17.sp, horizontal: 60.sp),
                           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
