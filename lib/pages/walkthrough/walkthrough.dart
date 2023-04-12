@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:tamang/core/settings/app_route.dart';
 import 'package:tamang/pages/walkthrough/views/walkthrough_1/walkthrough_1.dart';
 import 'package:tamang/pages/walkthrough/views/walkthrough_2/walkthrough_2.dart';
 import 'package:tamang/pages/walkthrough/views/walkthrough_3/walkthrough_3.dart';
@@ -54,7 +55,7 @@ class Walkthrough extends StatelessWidget {
                 width: Get.width,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Get.toNamed(AppRoute.walkthrough);
+                    Get.toNamed(AppRoute.login);
                   },
                   style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(vertical: 17.sp, horizontal: 60.sp),
