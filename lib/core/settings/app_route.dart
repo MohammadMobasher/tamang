@@ -37,7 +37,7 @@ class AppRoute {
     ),
     GetPage(
       name: forgetPassword,
-      page: () => const ForgetPassword(),
+      page: () => ForgetPassword(),
       opaque: false,
     ),
   ];
