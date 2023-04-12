@@ -137,11 +137,11 @@ class Login extends StatelessWidget {
               SizedBox(
                 height: 20.h,
               ),
-              InkWell(
-                onTap: () {
-                  Get.toNamed(AppRoute.forgetPassword);
-                },
-                child: Center(
+              Center(
+                child: InkWell(
+                  onTap: () {
+                    Get.toNamed(AppRoute.forgetPassword);
+                  },
                   child: Text(
                     "Forget Password?",
                     style: TextStyle(
