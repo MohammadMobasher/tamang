@@ -1,7 +1,5 @@
-// import 'package:food_for_everyone/pages/home/main_page.dart';
-// import 'package:food_for_everyone/pages/login/login_page.dart';
-// import 'package:food_for_everyone/pages/home/views/profile.dart';
 import 'package:get/get.dart';
+import 'package:tamang/pages/login/login.dart';
 import 'package:tamang/pages/splash/splash.dart';
 import 'package:tamang/pages/walkthrough/walkthrough.dart';
 import 'package:tamang/pages/welcome/welcome.dart';
@@ -30,10 +28,10 @@ class AppRoute {
       page: () => Walkthrough(),
       opaque: false,
     ),
-    // GetPage(
-    //   name: profile,
-    //   page: () => const Profile(),
-    //   opaque: false,
-    // ),
+    GetPage(
+      name: login,
+      page: () => const Login(),
+      opaque: false,
+    ),
   ];
 }
