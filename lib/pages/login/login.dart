@@ -194,11 +194,16 @@ class Login extends StatelessWidget {
                       fontSize: 12.sp,
                     ),
                   ),
-                  Text(
-                    "Create new account.",
-                    style: TextStyle(
-                      color: const Color(0xFFEEA734),
-                      fontSize: 12.sp,
+                  InkWell(
+                    onTap: () {
+                      Get.toNamed(AppRoute.signUp);
+                    },
+                    child: Text(
+                      "Create new account.",
+                      style: TextStyle(
+                        color: const Color(0xFFEEA734),
+                        fontSize: 12.sp,
+                      ),
                     ),
                   ),
                 ],
