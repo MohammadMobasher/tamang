@@ -3,11 +3,13 @@
 // import 'package:food_for_everyone/pages/home/views/profile.dart';
 import 'package:get/get.dart';
 import 'package:tamang/pages/splash/splash.dart';
+import 'package:tamang/pages/walkthrough/walkthrough.dart';
 import 'package:tamang/pages/welcome/welcome.dart';
 
 class AppRoute {
   static const home = "/home";
   static const welcome = "/welcome";
+  static const walkthrough = "/walkthrough";
   static const splash = "/";
   static const login = "/login";
   static const profile = "/profile";
@@ -23,11 +25,11 @@ class AppRoute {
       page: () => const Welcome(),
       opaque: false,
     ),
-    // GetPage(
-    //   name: home,
-    //   page: () => const MainPage(),
-    //   opaque: false,
-    // ),
+    GetPage(
+      name: walkthrough,
+      page: () => Walkthrough(),
+      opaque: false,
+    ),
     // GetPage(
     //   name: profile,
     //   page: () => const Profile(),
