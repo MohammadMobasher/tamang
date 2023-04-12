@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:tamang/pages/login/login.dart';
+import 'package:tamang/pages/login/views/forget_password/forget_password.dart';
 import 'package:tamang/pages/splash/splash.dart';
 import 'package:tamang/pages/walkthrough/walkthrough.dart';
 import 'package:tamang/pages/welcome/welcome.dart';
@@ -10,6 +11,7 @@ class AppRoute {
   static const walkthrough = "/walkthrough";
   static const splash = "/";
   static const login = "/login";
+  static const forgetPassword = "/forget_password";
   static const profile = "/profile";
 
   static final routes = [
@@ -31,6 +33,11 @@ class AppRoute {
     GetPage(
       name: login,
       page: () => const Login(),
+      opaque: false,
+    ),
+    GetPage(
+      name: forgetPassword,
+      page: () => const ForgetPassword(),
       opaque: false,
     ),
   ];
