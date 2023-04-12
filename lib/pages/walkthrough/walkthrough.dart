@@ -55,7 +55,7 @@ class Walkthrough extends StatelessWidget {
                 width: Get.width,
                 child: ElevatedButton(
                   onPressed: () {
-                    Get.toNamed(AppRoute.login);
+                    Get.offNamed(AppRoute.login);
                   },
                   style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(vertical: 17.sp, horizontal: 60.sp),

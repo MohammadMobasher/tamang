@@ -74,7 +74,7 @@ class Welcome extends StatelessWidget {
                     width: Get.width,
                     child: ElevatedButton(
                       onPressed: () {
-                        Get.toNamed(AppRoute.walkthrough);
+                        Get.offNamed(AppRoute.walkthrough);
                       },
                       style: ElevatedButton.styleFrom(
                           padding: EdgeInsets.symmetric(vertical: 17.sp, horizontal: 60.sp),
