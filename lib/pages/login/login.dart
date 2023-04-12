@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:tamang/core/settings/app_route.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -137,6 +138,9 @@ class Login extends StatelessWidget {
                 height: 20.h,
               ),
               InkWell(
+                onTap: () {
+                  Get.toNamed(AppRoute.forgetPassword);
+                },
                 child: Center(
                   child: Text(
                     "Forget Password?",
