@@ -382,6 +382,28 @@ class Home extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
+              SizedBox(
+                height: 20.h,
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.sp),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Best Picks\nRestaurants by\nteam",
+                      style: TextStyle(height: 2.sp, fontSize: 24.sp, fontWeight: FontWeight.bold, color: const Color(0xFF010F07)),
+                    ),
+                    Text(
+                      "See all",
+                      style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold, color: const Color(0xFFF8B64C)),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 5.h,
+              ),
             ],
           ),
         ),
