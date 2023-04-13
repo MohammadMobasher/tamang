@@ -158,7 +158,7 @@ class Login extends StatelessWidget {
                 width: Get.width,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Get.offNamed(AppRoute.walkthrough);
+                    Get.offNamed(AppRoute.home);
                   },
                   style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(vertical: 17.sp, horizontal: 60.sp),
