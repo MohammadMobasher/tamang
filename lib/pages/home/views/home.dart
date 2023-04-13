@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:tamang/pages/home/views/home_views/best_resturant.dart';
 import 'package:tamang/pages/home/views/home_views/featured_partners.dart';
 
 class Home extends StatelessWidget {
@@ -162,6 +163,7 @@ class Home extends StatelessWidget {
           SizedBox(
             height: 5.h,
           ),
+          const BestResturant(),
         ],
       ),
     );
