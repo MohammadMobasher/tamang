@@ -225,7 +225,7 @@ class Home extends StatelessWidget {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(10.sp),
                           child: Image.asset(
-                            "assets/images/featured_partners1.png",
+                            "assets/images/featured_partners2.png",
                             width: 200.w,
                             height: 160.h,
                             fit: BoxFit.cover,
