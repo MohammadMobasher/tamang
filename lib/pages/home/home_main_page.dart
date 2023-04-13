@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class Home extends StatelessWidget {
-  Home({super.key});
+class HomeMainPage extends StatelessWidget {
+  HomeMainPage({super.key});
   final PageController _pageController = PageController(initialPage: 0);
 
   @override
