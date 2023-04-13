@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -367,6 +368,18 @@ class Home extends StatelessWidget {
                       ],
                     ),
                   ],
+                ),
+              ),
+              SizedBox(
+                height: 34.h,
+              ),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(12.sp),
+                child: Image.asset(
+                  "assets/images/banner_free_delivery.png",
+                  height: 185.h,
+                  width: 335.w,
+                  fit: BoxFit.cover,
                 ),
               ),
             ],
