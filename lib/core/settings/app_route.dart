@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:tamang/pages/home/home.dart';
 import 'package:tamang/pages/login/login.dart';
 import 'package:tamang/pages/login/views/forget_password/forget_password.dart';
 import 'package:tamang/pages/sign_up/sign_up.dart';
@@ -44,7 +45,12 @@ class AppRoute {
     ),
     GetPage(
       name: signUp,
-      page: () => SignUp(),
+      page: () => const SignUp(),
+      opaque: false,
+    ),
+    GetPage(
+      name: home,
+      page: () => Home(),
       opaque: false,
     ),
   ];
