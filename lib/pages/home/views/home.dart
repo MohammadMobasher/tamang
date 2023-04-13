@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:tamang/pages/home/views/home_views/all_restaurant.dart';
 import 'package:tamang/pages/home/views/home_views/best_resturant.dart';
 import 'package:tamang/pages/home/views/home_views/featured_partners.dart';
 
@@ -164,6 +165,29 @@ class Home extends StatelessWidget {
             height: 5.h,
           ),
           const BestResturant(),
+          SizedBox(
+            height: 20.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.sp),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "All Restaurant",
+                  style: TextStyle(height: 2.sp, fontSize: 24.sp, fontWeight: FontWeight.bold, color: const Color(0xFF010F07)),
+                ),
+                Text(
+                  "See all",
+                  style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold, color: const Color(0xFFF8B64C)),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 5.h,
+          ),
+          AllResaturant(),
         ],
       ),
     );
