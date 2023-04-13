@@ -385,6 +385,42 @@ class Home extends StatelessWidget {
             ],
           ),
         ),
+        bottomNavigationBar: BottomNavigationBar(
+          iconSize: 34.sp,
+          elevation: 0,
+          currentIndex: 1,
+          backgroundColor: Colors.transparent,
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(
+                CupertinoIcons.home,
+                color: Color(0xFFADADAF),
+              ),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                CupertinoIcons.search,
+                color: Color(0xFFADADAF),
+              ),
+              label: 'Search',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                CupertinoIcons.ticket,
+                color: Color(0xFFADADAF),
+              ),
+              label: 'Orders',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                CupertinoIcons.person,
+                color: Color(0xFFADADAF),
+              ),
+              label: 'Profile',
+            ),
+          ],
+        ),
       ),
     );
   }
