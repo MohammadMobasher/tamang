@@ -15,6 +15,7 @@ class SignUp extends StatelessWidget {
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
           elevation: 0,
+          centerTitle: true,
           backgroundColor: Colors.white,
           foregroundColor: Colors.black,
           leading: InkWell(
@@ -26,11 +27,9 @@ class SignUp extends StatelessWidget {
               size: 24.sp,
             ),
           ),
-          title: Center(
-            child: Text(
-              "SignUp",
-              style: TextStyle(fontSize: 16.sp, color: Colors.black),
-            ),
+          title: Text(
+            "SignUp",
+            style: TextStyle(fontSize: 16.sp, color: Colors.black),
           ),
         ),
         body: Padding(
