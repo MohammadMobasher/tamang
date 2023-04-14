@@ -14,16 +14,15 @@ class Login extends StatelessWidget {
         resizeToAvoidBottomInset: false,
         backgroundColor: Colors.white,
         appBar: AppBar(
+          centerTitle: true,
           backgroundColor: Colors.white,
           elevation: 0,
-          title: Center(
-            child: Text(
-              "Sign In",
-              style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.w600,
-                fontSize: 16.sp,
-              ),
+          title: Text(
+            "Sign In",
+            style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.w600,
+              fontSize: 16.sp,
             ),
           ),
         ),
