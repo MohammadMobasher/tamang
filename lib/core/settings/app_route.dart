@@ -50,7 +50,7 @@ class AppRoute {
     ),
     GetPage(
       name: home,
-      page: () => HomeMainPage(),
+      page: () => const HomeMainPage(),
       opaque: false,
     ),
   ];
