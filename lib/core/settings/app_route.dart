@@ -64,7 +64,7 @@ class AppRoute {
     ),
     GetPage(
       name: restaurant,
-      page: () => const Restaurant(),
+      page: () => Restaurant(),
       opaque: false,
     ),
   ];
