@@ -33,13 +33,18 @@ class Home extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   pageSnapping: true,
                   children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(12.sp),
-                      child: Image.asset(
-                        "assets/images/home1.png",
-                        height: 185.h,
-                        width: 335.w,
-                        fit: BoxFit.cover,
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(AppRoute.restaurant);
+                      },
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12.sp),
+                        child: Image.asset(
+                          "assets/images/home1.png",
+                          height: 185.h,
+                          width: 335.w,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     ClipRRect(
