@@ -1,11 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:tamang/pages/home/views/home.dart';
 
 class HomeMainPage extends StatelessWidget {
-  HomeMainPage({super.key});
+  const HomeMainPage({super.key});
 
   @override
   Widget build(BuildContext context) {
