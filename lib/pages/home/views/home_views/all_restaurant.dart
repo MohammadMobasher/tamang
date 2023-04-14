@@ -7,7 +7,6 @@ class AllResaturant extends StatelessWidget {
   AllResaturant({super.key});
   final PageController _restaurant1Controller = PageController(initialPage: 0);
   final PageController _restaurant2Controller = PageController(initialPage: 0);
-  final PageController _restaurant3Controller = PageController(initialPage: 0);
 
   @override
   Widget build(BuildContext context) {

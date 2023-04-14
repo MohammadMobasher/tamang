@@ -12,9 +12,6 @@ class Walkthrough extends StatelessWidget {
   Walkthrough({super.key});
   final PageController _pageController = PageController(initialPage: 0);
   int pageIndex = 0;
-  static const _kDuration = Duration(milliseconds: 300);
-
-  static const _kCurve = Curves.ease;
 
   @override
   Widget build(BuildContext context) {
