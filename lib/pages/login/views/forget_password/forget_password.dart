@@ -15,6 +15,7 @@ class ForgetPassword extends StatelessWidget {
         backgroundColor: Colors.white,
         appBar: AppBar(
           elevation: 0,
+          centerTitle: true,
           backgroundColor: Colors.white,
           foregroundColor: Colors.black,
           leading: InkWell(
@@ -26,11 +27,9 @@ class ForgetPassword extends StatelessWidget {
               size: 24.sp,
             ),
           ),
-          title: Center(
-            child: Text(
-              "Forgot Password",
-              style: TextStyle(fontSize: 16.sp, color: Colors.black),
-            ),
+          title: Text(
+            "Forgot Password",
+            style: TextStyle(fontSize: 16.sp, color: Colors.black),
           ),
         ),
         body: Padding(
