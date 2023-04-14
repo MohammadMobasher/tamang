@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:tamang/pages/featured_partners/featured_partners.dart';
 import 'package:tamang/pages/home/home_main_page.dart';
 import 'package:tamang/pages/login/login.dart';
 import 'package:tamang/pages/login/views/forget_password/forget_password.dart';
@@ -9,6 +10,7 @@ import 'package:tamang/pages/welcome/welcome.dart';
 
 class AppRoute {
   static const home = "/home";
+  static const featuredPartners = "/featured_partners";
   static const welcome = "/welcome";
   static const walkthrough = "/walkthrough";
   static const splash = "/";
@@ -51,6 +53,11 @@ class AppRoute {
     GetPage(
       name: home,
       page: () => const HomeMainPage(),
+      opaque: false,
+    ),
+    GetPage(
+      name: featuredPartners,
+      page: () => const FeaturedPartners(),
       opaque: false,
     ),
   ];
