@@ -37,13 +37,16 @@ class Home extends StatelessWidget {
                       onTap: () {
                         Get.toNamed(AppRoute.restaurant);
                       },
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(12.sp),
-                        child: Image.asset(
-                          "assets/images/home1.png",
-                          height: 185.h,
-                          width: 335.w,
-                          fit: BoxFit.cover,
+                      child: Hero(
+                        tag: "home1",
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12.sp),
+                          child: Image.asset(
+                            "assets/images/home1.png",
+                            height: 185.h,
+                            width: 335.w,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
