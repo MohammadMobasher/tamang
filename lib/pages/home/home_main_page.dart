@@ -1,10 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:tamang/pages/home/home_main_page_controller.dart';
 import 'package:tamang/pages/home/views/home.dart';
 
+import 'package:tamang/pages/profile/profile.dart';
+
 class HomeMainPage extends StatelessWidget {
-  const HomeMainPage({super.key});
+  HomeMainPage({super.key});
+  final HomeMainPageController ctrl = Get.put(HomeMainPageController());
+  final _buildBody = <Widget>[Home(), const Profile()];
 
   @override
   Widget build(BuildContext context) {
@@ -15,11 +21,19 @@ class HomeMainPage extends StatelessWidget {
           elevation: 0,
           backgroundColor: Colors.white,
         ),
-        body: Home(),
+        body: Obx(() => _buildBody[ctrl.pageIndex.value]),
         bottomNavigationBar: BottomNavigationBar(
           iconSize: 34.sp,
           elevation: 0,
-          currentIndex: 1,
+          currentIndex: ctrl.pageIndex.value,
+          unselectedItemColor: const Color(0xFFADADAF),
+          selectedItemColor: const Color(0xFFEEA734),
+          selectedIconTheme: const IconThemeData(
+            color: Color(0xFFADADAF),
+          ),
+          onTap: (index) {
+            ctrl.pageIndex.value = index;
+          },
           backgroundColor: Colors.transparent,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
