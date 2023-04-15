@@ -284,6 +284,179 @@ class Restaurant extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(
+            height: 37.h,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.sp),
+            child: Text(
+              "Featured Items",
+              style: TextStyle(
+                fontSize: 20.sp,
+                color: const Color(0xFF010F07),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 18.h,
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 20.sp),
+            child: SizedBox(
+              // width: 140.w,
+              height: 198.h,
+              child: ListView(
+                shrinkWrap: false,
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.sp),
+                        child: Image.asset(
+                          width: 140.w,
+                          height: 140.h,
+                          "assets/images/bgfeatured_item_restaurant_page.png",
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.h,
+                      ),
+                      Text(
+                        "Cookie Sandwich",
+                        style: TextStyle(
+                          fontSize: 16.sp,
+                          color: const Color(0xFF010F07),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 4.h,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            "\$\$",
+                            style: TextStyle(
+                              fontSize: 14.sp,
+                              color: const Color(0xFF010F07),
+                            ),
+                          ),
+                          Text(
+                            ". Chinese",
+                            style: TextStyle(
+                              fontSize: 14.sp,
+                              color: const Color(0xFF010F07),
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    width: 14.w,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.sp),
+                        child: Image.asset(
+                          width: 140.w,
+                          height: 140.h,
+                          "assets/images/bgfeatured_item_restaurant_page1.png",
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.h,
+                      ),
+                      Text(
+                        "Chow Fun",
+                        style: TextStyle(
+                          fontSize: 16.sp,
+                          color: const Color(0xFF010F07),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 4.h,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            "\$\$",
+                            style: TextStyle(
+                              fontSize: 14.sp,
+                              color: const Color(0xFF010F07),
+                            ),
+                          ),
+                          Text(
+                            ". Chinese",
+                            style: TextStyle(
+                              fontSize: 14.sp,
+                              color: const Color(0xFF010F07),
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    width: 14.w,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(8.sp),
+                        child: Image.asset(
+                          width: 140.w,
+                          height: 140.h,
+                          "assets/images/bgfeatured_item_restaurant_page2.png",
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.h,
+                      ),
+                      Text(
+                        "Dim SUm",
+                        style: TextStyle(
+                          fontSize: 16.sp,
+                          color: const Color(0xFF010F07),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 4.h,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            "\$\$",
+                            style: TextStyle(
+                              fontSize: 14.sp,
+                              color: const Color(0xFF010F07),
+                            ),
+                          ),
+                          Text(
+                            ". Chinese",
+                            style: TextStyle(
+                              fontSize: 14.sp,
+                              color: const Color(0xFF010F07),
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    width: 14.w,
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
