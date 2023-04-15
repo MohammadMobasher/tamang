@@ -189,7 +189,7 @@ class Restaurant extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 20.sp),
             child: Row(
               children: [
-                MTextMainAndDetails(
+                MTextMainAndDetailAndPostIcon(
                   maintext: Text(
                     "Free",
                     style: TextStyle(
@@ -222,7 +222,7 @@ class Restaurant extends StatelessWidget {
                 SizedBox(
                   width: 24.w,
                 ),
-                MTextMainAndDetails(
+                MTextMainAndDetailAndPostIcon(
                   maintext: Text(
                     "25",
                     style: TextStyle(
