@@ -208,6 +208,9 @@ class AllResaturant extends StatelessWidget {
               ),
             ],
           ),
+          SizedBox(
+            height: 20.h,
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
