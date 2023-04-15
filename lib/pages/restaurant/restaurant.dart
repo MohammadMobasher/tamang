@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:tamang/widgets/m_text_main_and_details.dart';
 
 class Restaurant extends StatelessWidget {
   Restaurant({super.key});
@@ -183,6 +185,107 @@ class Restaurant extends StatelessWidget {
             ),
           ),
           SizedBox(height: 24.h),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.sp),
+            child: Row(
+              children: [
+                MTextMainAndDetails(
+                  maintext: Text(
+                    "Free",
+                    style: TextStyle(
+                      color: const Color(0xFF010F07),
+                      fontSize: 16.sp,
+                    ),
+                  ),
+                  icon: Stack(
+                    children: [
+                      SvgPicture.asset(
+                        "assets/images/icon_background.svg",
+                        width: 18.w,
+                        height: 24.h,
+                      ),
+                      Icon(
+                        CupertinoIcons.money_dollar_circle_fill,
+                        size: 20.sp,
+                        color: const Color(0xFFEEA734),
+                      ),
+                    ],
+                  ),
+                  detailsText: Text(
+                    "Delivery",
+                    style: TextStyle(
+                      color: const Color(0xFF979797),
+                      fontSize: 16.sp,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 24.w,
+                ),
+                MTextMainAndDetails(
+                  maintext: Text(
+                    "25",
+                    style: TextStyle(
+                      color: const Color(0xFF010F07),
+                      fontSize: 16.sp,
+                    ),
+                  ),
+                  icon: Stack(
+                    children: [
+                      SvgPicture.asset(
+                        "assets/images/icon_background.svg",
+                        width: 18.w,
+                        height: 24.h,
+                      ),
+                      Icon(
+                        CupertinoIcons.money_dollar_circle_fill,
+                        size: 20.sp,
+                        color: const Color(0xFFEEA734),
+                      ),
+                    ],
+                  ),
+                  detailsText: Text(
+                    "Minutes",
+                    style: TextStyle(
+                      color: const Color(0xFF979797),
+                      fontSize: 16.sp,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 59.w,
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    // Get.offNamed(AppRoute.walkthrough);
+                  },
+                  style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.symmetric(vertical: 14.5.sp, horizontal: 18.sp),
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      backgroundColor: Colors.white,
+                      side: const BorderSide(
+                        color: Color(0xFFEEA734),
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(6.sp),
+                      )),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 12.sp,
+                    ),
+                    child: Text(
+                      "TAKE AWAY",
+                      style: TextStyle(
+                        fontSize: 12.sp,
+                        color: const Color(0xFFEEA734),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
