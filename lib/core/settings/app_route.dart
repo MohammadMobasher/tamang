@@ -3,6 +3,7 @@ import 'package:tamang/pages/featured_partners/featured_partners.dart';
 import 'package:tamang/pages/home/home_main_page.dart';
 import 'package:tamang/pages/login/login.dart';
 import 'package:tamang/pages/login/views/forget_password/forget_password.dart';
+import 'package:tamang/pages/profile/profile.dart';
 import 'package:tamang/pages/restaurant/restaurant.dart';
 import 'package:tamang/pages/sign_up/sign_up.dart';
 import 'package:tamang/pages/splash/splash.dart';
@@ -65,6 +66,11 @@ class AppRoute {
     GetPage(
       name: restaurant,
       page: () => Restaurant(),
+      opaque: false,
+    ),
+    GetPage(
+      name: profile,
+      page: () => const Profile(),
       opaque: false,
     ),
   ];
