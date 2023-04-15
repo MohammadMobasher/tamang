@@ -256,9 +256,7 @@ class Restaurant extends StatelessWidget {
                   width: 59.w,
                 ),
                 ElevatedButton(
-                  onPressed: () {
-                    // Get.offNamed(AppRoute.walkthrough);
-                  },
+                  onPressed: () {},
                   style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(vertical: 14.5.sp, horizontal: 18.sp),
                       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
