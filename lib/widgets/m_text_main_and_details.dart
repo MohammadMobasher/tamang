@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class MTextMainAndDetails extends StatelessWidget {
-  const MTextMainAndDetails({
+class MTextMainAndDetailAndPostIcon extends StatelessWidget {
+  const MTextMainAndDetailAndPostIcon({
     Key? key,
     required this.maintext,
     this.detailsText,
