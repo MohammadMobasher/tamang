@@ -13,7 +13,7 @@ class MTextMainAndDetails extends StatelessWidget {
   final Text maintext;
   final Text? detailsText;
   final bool isCenter;
-  final Icon? icon;
+  final Widget? icon;
   final void Function()? onTap;
 
   @override
