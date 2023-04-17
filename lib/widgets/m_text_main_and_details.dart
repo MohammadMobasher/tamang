@@ -9,11 +9,15 @@ class MTextMainAndDetailAndPostIcon extends StatelessWidget {
     this.isCenter = false,
     this.preIcon,
     this.postIcon,
+    this.mainDetailPadding,
+    this.verticalPadding,
     this.onTap,
   }) : super(key: key);
   final Text maintext;
   final Text? detailsText;
   final bool isCenter;
+  final double? mainDetailPadding;
+  final double? verticalPadding;
   final Widget? preIcon;
   final Widget? postIcon;
   final void Function()? onTap;
@@ -24,7 +28,7 @@ class MTextMainAndDetailAndPostIcon extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 6.sp),
+          padding: EdgeInsets.symmetric(vertical: (verticalPadding ?? 10.sp)),
           child: Expanded(
             child: Row(
               crossAxisAlignment: (isCenter ? CrossAxisAlignment.center : CrossAxisAlignment.start),
@@ -42,7 +46,7 @@ class MTextMainAndDetailAndPostIcon extends StatelessWidget {
                     children: [
                       maintext,
                       SizedBox(
-                        height: 8.sp,
+                        height: (mainDetailPadding ?? 10.sp),
                       ),
                       (detailsText ?? Container()),
                     ],
