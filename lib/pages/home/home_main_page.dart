@@ -10,7 +10,7 @@ import 'package:tamang/pages/profile/profile.dart';
 class HomeMainPage extends StatelessWidget {
   HomeMainPage({super.key});
   final HomeMainPageController ctrl = Get.put(HomeMainPageController());
-  final _buildBody = <Widget>[Home(), const Profile()];
+  final _buildBody = <Widget>[Home(), Home(), Home(), const Profile()];
 
   @override
   Widget build(BuildContext context) {
