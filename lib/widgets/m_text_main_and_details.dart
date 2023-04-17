@@ -30,7 +30,7 @@ class MTextMainAndDetailAndPostIcon extends StatelessWidget {
                   crossAxisAlignment: (isCenter ? CrossAxisAlignment.center : CrossAxisAlignment.start),
                   children: [
                     Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: (isCenter ? CrossAxisAlignment.center : CrossAxisAlignment.start),
                       children: [
                         (icon ?? Container()),
                         SizedBox(
