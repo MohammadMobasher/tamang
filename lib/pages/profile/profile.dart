@@ -227,6 +227,100 @@ class Profile extends StatelessWidget {
                 SizedBox(
                   height: 28.h,
                 ),
+                Padding(
+                  padding: EdgeInsets.only(left: 34.sp),
+                  child: Text(
+                    "Notifications",
+                    style: TextStyle(
+                      fontSize: 28.sp,
+                      fontWeight: FontWeight.w500,
+                      color: const Color(0xFF010F07),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 12.h,
+                ),
+                MTextMainAndDetailAndPostIcon(
+                  preIcon: Icon(
+                    CupertinoIcons.person_fill,
+                    size: 24.sp,
+                    color: const Color(0xFF010F07),
+                  ),
+                  isCenter: true,
+                  mainDetailPadding: 12.sp,
+                  maintext: Text(
+                    "Push Notifications",
+                    style: TextStyle(
+                      fontSize: 16.sp,
+                      color: const Color(0xFF010F07),
+                    ),
+                  ),
+                  detailsText: Text(
+                    "For daily update you will get it",
+                    style: TextStyle(
+                      fontSize: 14.sp,
+                      color: const Color(0xFF868686),
+                    ),
+                  ),
+                  postWidget: Switch(value: true, onChanged: (bool newValue) {}),
+                ),
+                const Divider(
+                  color: Color(0xFF868686),
+                  thickness: 0.2,
+                ),
+                MTextMainAndDetailAndPostIcon(
+                  preIcon: Icon(
+                    CupertinoIcons.person_fill,
+                    size: 24.sp,
+                    color: const Color(0xFF010F07),
+                  ),
+                  isCenter: true,
+                  mainDetailPadding: 12.sp,
+                  maintext: Text(
+                    "SMS Notifications",
+                    style: TextStyle(
+                      fontSize: 16.sp,
+                      color: const Color(0xFF010F07),
+                    ),
+                  ),
+                  detailsText: Text(
+                    "Change your account information",
+                    style: TextStyle(
+                      fontSize: 14.sp,
+                      color: const Color(0xFF868686),
+                    ),
+                  ),
+                  postWidget: Switch(value: false, onChanged: (bool newValue) {}),
+                ),
+                const Divider(
+                  color: Color(0xFF979797),
+                  thickness: 0.2,
+                ),
+                MTextMainAndDetailAndPostIcon(
+                  preIcon: Icon(
+                    CupertinoIcons.person_fill,
+                    size: 24.sp,
+                    color: const Color(0xFF010F07),
+                  ),
+                  isCenter: true,
+                  mainDetailPadding: 12.sp,
+                  maintext: Text(
+                    "Promotional Notifications",
+                    style: TextStyle(
+                      fontSize: 16.sp,
+                      color: const Color(0xFF010F07),
+                    ),
+                  ),
+                  detailsText: Text(
+                    "Change your account information",
+                    style: TextStyle(
+                      fontSize: 14.sp,
+                      color: const Color(0xFF868686),
+                    ),
+                  ),
+                  postWidget: Switch(value: true, onChanged: (bool newValue) {}),
+                ),
               ],
             ),
           ),
