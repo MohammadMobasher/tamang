@@ -1,14 +1,15 @@
 import 'package:get/get.dart';
-import 'package:tamang/pages/featured_partners/featured_partners.dart';
-import 'package:tamang/pages/home/home_main_page.dart';
 import 'package:tamang/pages/login/login.dart';
-import 'package:tamang/pages/login/views/forget_password/forget_password.dart';
-import 'package:tamang/pages/profile/profile.dart';
-import 'package:tamang/pages/restaurant/restaurant.dart';
-import 'package:tamang/pages/sign_up/sign_up.dart';
+import 'package:tamang/pages/profile/profile_information/ProfileInformation.dart';
 import 'package:tamang/pages/splash/splash.dart';
-import 'package:tamang/pages/walkthrough/walkthrough.dart';
+import 'package:tamang/pages/profile/profile.dart';
+import 'package:tamang/pages/sign_up/sign_up.dart';
 import 'package:tamang/pages/welcome/welcome.dart';
+import 'package:tamang/pages/home/home_main_page.dart';
+import 'package:tamang/pages/restaurant/restaurant.dart';
+import 'package:tamang/pages/walkthrough/walkthrough.dart';
+import 'package:tamang/pages/featured_partners/featured_partners.dart';
+import 'package:tamang/pages/login/views/forget_password/forget_password.dart';
 
 class AppRoute {
   static const home = "/home";
@@ -21,6 +22,7 @@ class AppRoute {
   static const forgetPassword = "/forget_password";
   static const signUp = "/sign_up";
   static const profile = "/profile";
+  static const profileInformation = "/profile_information";
 
   static final routes = [
     GetPage(
@@ -71,6 +73,11 @@ class AppRoute {
     GetPage(
       name: profile,
       page: () => const Profile(),
+      opaque: false,
+    ),
+    GetPage(
+      name: profileInformation,
+      page: () => const ProfileInformation(),
       opaque: false,
     ),
   ];
