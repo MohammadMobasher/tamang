@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:tamang/pages/login/login.dart';
+import 'package:tamang/pages/profile/change_password/change_password.dart';
 import 'package:tamang/pages/profile/profile_information/ProfileInformation.dart';
 import 'package:tamang/pages/splash/splash.dart';
 import 'package:tamang/pages/profile/profile.dart';
@@ -23,6 +24,7 @@ class AppRoute {
   static const signUp = "/sign_up";
   static const profile = "/profile";
   static const profileInformation = "/profile_information";
+  static const changePassword = "/change_password";
 
   static final routes = [
     GetPage(
@@ -78,6 +80,11 @@ class AppRoute {
     GetPage(
       name: profileInformation,
       page: () => const ProfileInformation(),
+      opaque: false,
+    ),
+    GetPage(
+      name: changePassword,
+      page: () => const ChangePassword(),
       opaque: false,
     ),
   ];
