@@ -80,31 +80,36 @@ class Profile extends StatelessWidget {
                   color: Color(0xFF979797),
                   thickness: 0.2,
                 ),
-                MTextMainAndDetailAndPostIcon(
-                  preIcon: Icon(
-                    CupertinoIcons.lock_fill,
-                    size: 24.sp,
-                    color: const Color(0xFF010F07),
-                  ),
-                  isCenter: true,
-                  maintext: Text(
-                    "Change Password",
-                    style: TextStyle(
-                      fontSize: 16.sp,
+                GestureDetector(
+                  onTap: () {
+                    Get.toNamed(AppRoute.profileInformation);
+                  },
+                  child: MTextMainAndDetailAndPostIcon(
+                    preIcon: Icon(
+                      CupertinoIcons.lock_fill,
+                      size: 24.sp,
                       color: const Color(0xFF010F07),
                     ),
-                  ),
-                  detailsText: Text(
-                    "Change your password",
-                    style: TextStyle(
-                      fontSize: 14.sp,
-                      color: const Color(0xFF868686),
+                    isCenter: true,
+                    maintext: Text(
+                      "Change Password",
+                      style: TextStyle(
+                        fontSize: 16.sp,
+                        color: const Color(0xFF010F07),
+                      ),
                     ),
-                  ),
-                  postWidget: Icon(
-                    CupertinoIcons.forward,
-                    size: 24.sp,
-                    color: const Color(0xFF010F07),
+                    detailsText: Text(
+                      "Change your password",
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        color: const Color(0xFF868686),
+                      ),
+                    ),
+                    postWidget: Icon(
+                      CupertinoIcons.forward,
+                      size: 24.sp,
+                      color: const Color(0xFF010F07),
+                    ),
                   ),
                 ),
                 const Divider(
