@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:tamang/core/settings/app_route.dart';
 import 'package:tamang/widgets/m_text_main_and_details.dart';
 
 class Profile extends StatelessWidget {
@@ -41,32 +43,37 @@ class Profile extends StatelessWidget {
                 SizedBox(
                   height: 24.h,
                 ),
-                MTextMainAndDetailAndPostIcon(
-                  preIcon: Icon(
-                    CupertinoIcons.person_fill,
-                    size: 24.sp,
-                    color: const Color(0xFF010F07),
-                  ),
-                  isCenter: true,
-                  mainDetailPadding: 12.sp,
-                  maintext: Text(
-                    "Profile Information",
-                    style: TextStyle(
-                      fontSize: 16.sp,
+                GestureDetector(
+                  onTap: () {
+                    Get.toNamed(AppRoute.profileInformation);
+                  },
+                  child: MTextMainAndDetailAndPostIcon(
+                    preIcon: Icon(
+                      CupertinoIcons.person_fill,
+                      size: 24.sp,
                       color: const Color(0xFF010F07),
                     ),
-                  ),
-                  detailsText: Text(
-                    "Change your account information",
-                    style: TextStyle(
-                      fontSize: 14.sp,
-                      color: const Color(0xFF868686),
+                    isCenter: true,
+                    mainDetailPadding: 12.sp,
+                    maintext: Text(
+                      "Profile Information",
+                      style: TextStyle(
+                        fontSize: 16.sp,
+                        color: const Color(0xFF010F07),
+                      ),
                     ),
-                  ),
-                  postWidget: Icon(
-                    CupertinoIcons.forward,
-                    size: 24.sp,
-                    color: const Color(0xFF010F07),
+                    detailsText: Text(
+                      "Change your account information",
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        color: const Color(0xFF868686),
+                      ),
+                    ),
+                    postWidget: Icon(
+                      CupertinoIcons.forward,
+                      size: 24.sp,
+                      color: const Color(0xFF010F07),
+                    ),
                   ),
                 ),
                 const Divider(
