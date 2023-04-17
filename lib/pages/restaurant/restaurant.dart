@@ -197,7 +197,7 @@ class Restaurant extends StatelessWidget {
                       fontSize: 16.sp,
                     ),
                   ),
-                  icon: Stack(
+                  preIcon: Stack(
                     children: [
                       SvgPicture.asset(
                         "assets/images/icon_background.svg",
@@ -230,7 +230,7 @@ class Restaurant extends StatelessWidget {
                       fontSize: 16.sp,
                     ),
                   ),
-                  icon: Stack(
+                  preIcon: Stack(
                     children: [
                       SvgPicture.asset(
                         "assets/images/icon_background.svg",

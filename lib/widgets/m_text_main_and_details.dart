@@ -7,13 +7,15 @@ class MTextMainAndDetailAndPostIcon extends StatelessWidget {
     required this.maintext,
     this.detailsText,
     this.isCenter = false,
-    this.icon,
+    this.preIcon,
+    this.postIcon,
     this.onTap,
   }) : super(key: key);
   final Text maintext;
   final Text? detailsText;
   final bool isCenter;
-  final Widget? icon;
+  final Widget? preIcon;
+  final Widget? postIcon;
   final void Function()? onTap;
 
   @override
@@ -32,11 +34,12 @@ class MTextMainAndDetailAndPostIcon extends StatelessWidget {
                     Row(
                       crossAxisAlignment: (isCenter ? CrossAxisAlignment.center : CrossAxisAlignment.start),
                       children: [
-                        (icon ?? Container()),
+                        (preIcon ?? Container()),
                         SizedBox(
-                          width: (icon != null ? 8.sp : 0.sp),
+                          width: (preIcon != null ? 8.sp : 0.sp),
                         ),
                         Flexible(
+                          fit: FlexFit.tight,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,7 +51,11 @@ class MTextMainAndDetailAndPostIcon extends StatelessWidget {
                               (detailsText ?? Container()),
                             ],
                           ),
-                        )
+                        ),
+                        SizedBox(
+                          width: (postIcon != null ? 8.sp : 0.sp),
+                        ),
+                        (postIcon ?? Container()),
                       ],
                     ),
                   ],
