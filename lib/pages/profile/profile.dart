@@ -22,7 +22,7 @@ class Profile extends StatelessWidget {
                   child: Text(
                     "Account Settings",
                     style: TextStyle(
-                      fontSize: 28.sp,
+                      fontSize: 24.sp,
                       fontWeight: FontWeight.w500,
                       color: const Color(0xFF010F07),
                     ),
@@ -232,7 +232,7 @@ class Profile extends StatelessWidget {
                   child: Text(
                     "Notifications",
                     style: TextStyle(
-                      fontSize: 28.sp,
+                      fontSize: 24.sp,
                       fontWeight: FontWeight.w500,
                       color: const Color(0xFF010F07),
                     ),
@@ -263,7 +263,7 @@ class Profile extends StatelessWidget {
                       color: const Color(0xFF868686),
                     ),
                   ),
-                  postWidget: Switch(value: true, onChanged: (bool newValue) {}),
+                  postWidget: Switch.adaptive(value: true, onChanged: (bool newValue) {}),
                 ),
                 const Divider(
                   color: Color(0xFF868686),
@@ -291,7 +291,7 @@ class Profile extends StatelessWidget {
                       color: const Color(0xFF868686),
                     ),
                   ),
-                  postWidget: Switch(value: false, onChanged: (bool newValue) {}),
+                  postWidget: Switch.adaptive(value: false, onChanged: (bool newValue) {}),
                 ),
                 const Divider(
                   color: Color(0xFF979797),
@@ -319,7 +319,109 @@ class Profile extends StatelessWidget {
                       color: const Color(0xFF868686),
                     ),
                   ),
-                  postWidget: Switch(value: true, onChanged: (bool newValue) {}),
+                  postWidget: Switch.adaptive(
+                    value: true,
+                    onChanged: (bool newValue) {},
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 34.sp),
+                  child: Text(
+                    "More",
+                    style: TextStyle(
+                      fontSize: 24.sp,
+                      fontWeight: FontWeight.w500,
+                      color: const Color(0xFF010F07),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 12.h,
+                ),
+                MTextMainAndDetailAndPostIcon(
+                  preIcon: Icon(
+                    CupertinoIcons.star_fill,
+                    size: 24.sp,
+                    color: const Color(0xFFEEA734),
+                  ),
+                  isCenter: true,
+                  mainDetailPadding: 12.sp,
+                  maintext: Text(
+                    "Rate Us",
+                    style: TextStyle(
+                      fontSize: 16.sp,
+                      color: const Color(0xFF010F07),
+                    ),
+                  ),
+                  detailsText: Text(
+                    "Rate us playstore, appstor",
+                    style: TextStyle(
+                      fontSize: 14.sp,
+                      color: const Color(0xFF868686),
+                    ),
+                  ),
+                  postWidget: Icon(
+                    CupertinoIcons.forward,
+                    size: 24.sp,
+                    color: const Color(0xFF010F07),
+                  ),
+                ),
+                const Divider(
+                  color: Color(0xFF868686),
+                  thickness: 0.2,
+                ),
+                MTextMainAndDetailAndPostIcon(
+                  preIcon: Icon(
+                    CupertinoIcons.person_fill,
+                    size: 24.sp,
+                    color: const Color(0xFF010F07),
+                  ),
+                  isCenter: true,
+                  mainDetailPadding: 12.sp,
+                  maintext: Text(
+                    "FAQ",
+                    style: TextStyle(
+                      fontSize: 16.sp,
+                      color: const Color(0xFF010F07),
+                    ),
+                  ),
+                  detailsText: Text(
+                    "Frequently asked questions",
+                    style: TextStyle(
+                      fontSize: 14.sp,
+                      color: const Color(0xFF868686),
+                    ),
+                  ),
+                  postWidget: Icon(
+                    CupertinoIcons.forward,
+                    size: 24.sp,
+                    color: const Color(0xFF010F07),
+                  ),
+                ),
+                const Divider(
+                  color: Color(0xFF979797),
+                  thickness: 0.2,
+                ),
+                MTextMainAndDetailAndPostIcon(
+                  preIcon: Icon(
+                    CupertinoIcons.arrow_clockwise_circle_fill,
+                    size: 24.sp,
+                    color: const Color(0xFF010F07),
+                  ),
+                  isCenter: true,
+                  mainDetailPadding: 12.sp,
+                  maintext: Text(
+                    "Logout",
+                    style: TextStyle(
+                      fontSize: 16.sp,
+                      color: const Color(0xFF010F07),
+                    ),
+                  ),
+                  postWidget: Icon(
+                    CupertinoIcons.forward,
+                    size: 24.sp,
+                    color: const Color(0xFF010F07),
+                  ),
                 ),
               ],
             ),
