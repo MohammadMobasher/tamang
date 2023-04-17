@@ -82,7 +82,7 @@ class Profile extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    Get.toNamed(AppRoute.profileInformation);
+                    Get.toNamed(AppRoute.changePassword);
                   },
                   child: MTextMainAndDetailAndPostIcon(
                     preIcon: Icon(
