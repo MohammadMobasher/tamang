@@ -8,7 +8,7 @@ class MTextMainAndDetailAndPostIcon extends StatelessWidget {
     this.detailsText,
     this.isCenter = false,
     this.preIcon,
-    this.postIcon,
+    this.postWidget,
     this.mainDetailPadding,
     this.verticalPadding,
     this.onTap,
@@ -19,7 +19,7 @@ class MTextMainAndDetailAndPostIcon extends StatelessWidget {
   final double? mainDetailPadding;
   final double? verticalPadding;
   final Widget? preIcon;
-  final Widget? postIcon;
+  final Widget? postWidget;
   final void Function()? onTap;
 
   @override
@@ -57,9 +57,9 @@ class MTextMainAndDetailAndPostIcon extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: (postIcon != null ? 8.sp : 0.sp),
+                          width: (postWidget != null ? 8.sp : 0.sp),
                         ),
-                        (postIcon ?? Container()),
+                        (postWidget ?? Container()),
                       ],
                     ),
                   ],
