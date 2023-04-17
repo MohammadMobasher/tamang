@@ -114,31 +114,36 @@ class Profile extends StatelessWidget {
               color: Color(0xFF979797),
               thickness: 0.2,
             ),
-            MTextMainAndDetailAndPostIcon(
-              preIcon: Icon(
-                CupertinoIcons.creditcard,
-                size: 24.sp,
-                color: const Color(0xFF010F07),
-              ),
-              isCenter: true,
-              maintext: Text(
-                "Payment Methods",
-                style: TextStyle(
-                  fontSize: 16.sp,
+            GestureDetector(
+              onTap: () {
+                Get.toNamed(AppRoute.paymentMethod);
+              },
+              child: MTextMainAndDetailAndPostIcon(
+                preIcon: Icon(
+                  CupertinoIcons.creditcard,
+                  size: 24.sp,
                   color: const Color(0xFF010F07),
                 ),
-              ),
-              detailsText: Text(
-                "Add your credit & debit cards",
-                style: TextStyle(
-                  fontSize: 14.sp,
-                  color: const Color(0xFF868686),
+                isCenter: true,
+                maintext: Text(
+                  "Payment Methods",
+                  style: TextStyle(
+                    fontSize: 16.sp,
+                    color: const Color(0xFF010F07),
+                  ),
                 ),
-              ),
-              postWidget: Icon(
-                CupertinoIcons.forward,
-                size: 24.sp,
-                color: const Color(0xFF010F07),
+                detailsText: Text(
+                  "Add your credit & debit cards",
+                  style: TextStyle(
+                    fontSize: 14.sp,
+                    color: const Color(0xFF868686),
+                  ),
+                ),
+                postWidget: Icon(
+                  CupertinoIcons.forward,
+                  size: 24.sp,
+                  color: const Color(0xFF010F07),
+                ),
               ),
             ),
             const Divider(
