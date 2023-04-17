@@ -23,6 +23,13 @@ class MainApp extends StatelessWidget {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           getPages: AppRoute.routes,
+          theme: ThemeData.light().copyWith(
+            primaryColor: const Color(0xFFF8B64C),
+            switchTheme: SwitchThemeData(
+              thumbColor: MaterialStateProperty.all(Colors.white),
+              trackColor: MaterialStateProperty.resolveWith((states) => states.contains(MaterialState.selected) ? const Color(0xFFF8B64C) : null),
+            ),
+          ),
         );
       },
     );
