@@ -29,35 +29,43 @@ class MTextMainAndDetailAndPostIcon extends StatelessWidget {
         onTap: onTap,
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: (verticalPadding ?? 10.sp)),
-          child: Expanded(
-            child: Row(
-              crossAxisAlignment: (isCenter ? CrossAxisAlignment.center : CrossAxisAlignment.start),
-              children: [
-                (preIcon ?? Container()),
-                SizedBox(
-                  width: (preIcon != null ? 8.sp : 0.sp),
+          child: Row(
+            children: [
+              Expanded(
+                child: Column(
+                  children: [
+                    Row(
+                      crossAxisAlignment: (isCenter ? CrossAxisAlignment.center : CrossAxisAlignment.start),
+                      children: [
+                        (preIcon ?? Container()),
+                        SizedBox(
+                          width: (preIcon != null ? 8.sp : 0.sp),
+                        ),
+                        Flexible(
+                          fit: FlexFit.tight,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              maintext,
+                              SizedBox(
+                                height: (mainDetailPadding ?? 10.sp),
+                              ),
+                              (detailsText ?? Container()),
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: (postIcon != null ? 8.sp : 0.sp),
+                        ),
+                        (postIcon ?? Container()),
+                      ],
+                    ),
+                  ],
                 ),
-                Flexible(
-                  fit: FlexFit.tight,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      maintext,
-                      SizedBox(
-                        height: (mainDetailPadding ?? 10.sp),
-                      ),
-                      (detailsText ?? Container()),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: (postIcon != null ? 8.sp : 0.sp),
-                ),
-                (postIcon ?? Container()),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
