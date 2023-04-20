@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:tamang/pages/login/login.dart';
 import 'package:tamang/pages/profile/change_password/change_password.dart';
-import 'package:tamang/pages/home/payment_method/payment_method.dart';
+import 'package:tamang/pages/payment_method/payment_method.dart';
 import 'package:tamang/pages/profile/profile_information/ProfileInformation.dart';
 import 'package:tamang/pages/splash/splash.dart';
 import 'package:tamang/pages/profile/profile.dart';
