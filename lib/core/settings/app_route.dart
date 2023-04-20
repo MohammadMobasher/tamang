@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:tamang/pages/login/login.dart';
+import 'package:tamang/pages/payment_method/add_payment_card/add_payment_card.dart';
 import 'package:tamang/pages/profile/change_password/change_password.dart';
 import 'package:tamang/pages/payment_method/payment_method.dart';
 import 'package:tamang/pages/profile/profile_information/ProfileInformation.dart';
@@ -27,6 +28,7 @@ class AppRoute {
   static const profileInformation = "/profile_information";
   static const changePassword = "/change_password";
   static const paymentMethod = "/payment_method";
+  static const addPaymentCard = "/add_payment_card";
 
   static final routes = [
     GetPage(
@@ -92,6 +94,11 @@ class AppRoute {
     GetPage(
       name: paymentMethod,
       page: () => const PaymentMethod(),
+      opaque: false,
+    ),
+    GetPage(
+      name: addPaymentCard,
+      page: () => const AddPaymentCard(),
       opaque: false,
     ),
   ];
