@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:tamang/core/settings/app_route.dart';
 
 class PaymentMethod extends StatelessWidget {
   const PaymentMethod({super.key});
@@ -74,7 +75,9 @@ class PaymentMethod extends StatelessWidget {
                 child: SizedBox(
                   width: Get.width,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed(AppRoute.addPaymentCard);
+                    },
                     style: ElevatedButton.styleFrom(
                         padding: EdgeInsets.symmetric(vertical: 14.5.sp, horizontal: 18.sp),
                         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
