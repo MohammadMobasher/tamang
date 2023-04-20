@@ -41,109 +41,103 @@ class Profile extends StatelessWidget {
             SizedBox(
               height: 24.h,
             ),
-            GestureDetector(
+            MTextMainAndDetailAndPostIcon(
               onTap: () {
                 Get.toNamed(AppRoute.profileInformation);
               },
-              child: MTextMainAndDetailAndPostIcon(
-                preIcon: Icon(
-                  CupertinoIcons.person_fill,
-                  size: 24.sp,
+              preIcon: Icon(
+                CupertinoIcons.person_fill,
+                size: 24.sp,
+                color: const Color(0xFF010F07),
+              ),
+              isCenter: true,
+              mainDetailPadding: 12.sp,
+              maintext: Text(
+                "Profile Information",
+                style: TextStyle(
+                  fontSize: 16.sp,
                   color: const Color(0xFF010F07),
                 ),
-                isCenter: true,
-                mainDetailPadding: 12.sp,
-                maintext: Text(
-                  "Profile Information",
-                  style: TextStyle(
-                    fontSize: 16.sp,
-                    color: const Color(0xFF010F07),
-                  ),
+              ),
+              detailsText: Text(
+                "Change your account information",
+                style: TextStyle(
+                  fontSize: 14.sp,
+                  color: const Color(0xFF868686),
                 ),
-                detailsText: Text(
-                  "Change your account information",
-                  style: TextStyle(
-                    fontSize: 14.sp,
-                    color: const Color(0xFF868686),
-                  ),
-                ),
-                postWidget: Icon(
-                  CupertinoIcons.forward,
-                  size: 24.sp,
-                  color: const Color(0xFF010F07),
-                ),
+              ),
+              postWidget: Icon(
+                CupertinoIcons.forward,
+                size: 24.sp,
+                color: const Color(0xFF010F07),
               ),
             ),
             const Divider(
               color: Color(0xFF979797),
               thickness: 0.2,
             ),
-            GestureDetector(
+            MTextMainAndDetailAndPostIcon(
               onTap: () {
                 Get.toNamed(AppRoute.changePassword);
               },
-              child: MTextMainAndDetailAndPostIcon(
-                preIcon: Icon(
-                  CupertinoIcons.lock_fill,
-                  size: 24.sp,
+              preIcon: Icon(
+                CupertinoIcons.lock_fill,
+                size: 24.sp,
+                color: const Color(0xFF010F07),
+              ),
+              isCenter: true,
+              maintext: Text(
+                "Change Password",
+                style: TextStyle(
+                  fontSize: 16.sp,
                   color: const Color(0xFF010F07),
                 ),
-                isCenter: true,
-                maintext: Text(
-                  "Change Password",
-                  style: TextStyle(
-                    fontSize: 16.sp,
-                    color: const Color(0xFF010F07),
-                  ),
+              ),
+              detailsText: Text(
+                "Change your password",
+                style: TextStyle(
+                  fontSize: 14.sp,
+                  color: const Color(0xFF868686),
                 ),
-                detailsText: Text(
-                  "Change your password",
-                  style: TextStyle(
-                    fontSize: 14.sp,
-                    color: const Color(0xFF868686),
-                  ),
-                ),
-                postWidget: Icon(
-                  CupertinoIcons.forward,
-                  size: 24.sp,
-                  color: const Color(0xFF010F07),
-                ),
+              ),
+              postWidget: Icon(
+                CupertinoIcons.forward,
+                size: 24.sp,
+                color: const Color(0xFF010F07),
               ),
             ),
             const Divider(
               color: Color(0xFF979797),
               thickness: 0.2,
             ),
-            GestureDetector(
+            MTextMainAndDetailAndPostIcon(
               onTap: () {
                 Get.toNamed(AppRoute.paymentMethod);
               },
-              child: MTextMainAndDetailAndPostIcon(
-                preIcon: Icon(
-                  CupertinoIcons.creditcard,
-                  size: 24.sp,
+              preIcon: Icon(
+                CupertinoIcons.creditcard,
+                size: 24.sp,
+                color: const Color(0xFF010F07),
+              ),
+              isCenter: true,
+              maintext: Text(
+                "Payment Methods",
+                style: TextStyle(
+                  fontSize: 16.sp,
                   color: const Color(0xFF010F07),
                 ),
-                isCenter: true,
-                maintext: Text(
-                  "Payment Methods",
-                  style: TextStyle(
-                    fontSize: 16.sp,
-                    color: const Color(0xFF010F07),
-                  ),
+              ),
+              detailsText: Text(
+                "Add your credit & debit cards",
+                style: TextStyle(
+                  fontSize: 14.sp,
+                  color: const Color(0xFF868686),
                 ),
-                detailsText: Text(
-                  "Add your credit & debit cards",
-                  style: TextStyle(
-                    fontSize: 14.sp,
-                    color: const Color(0xFF868686),
-                  ),
-                ),
-                postWidget: Icon(
-                  CupertinoIcons.forward,
-                  size: 24.sp,
-                  color: const Color(0xFF010F07),
-                ),
+              ),
+              postWidget: Icon(
+                CupertinoIcons.forward,
+                size: 24.sp,
+                color: const Color(0xFF010F07),
               ),
             ),
             const Divider(
