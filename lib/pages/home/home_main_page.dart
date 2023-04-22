@@ -6,11 +6,12 @@ import 'package:tamang/pages/home/home_main_page_controller.dart';
 import 'package:tamang/pages/home/views/home.dart';
 
 import 'package:tamang/pages/profile/profile.dart';
+import 'package:tamang/pages/search_restaurant/search_restaurant.dart';
 
 class HomeMainPage extends StatelessWidget {
   HomeMainPage({super.key});
   final HomeMainPageController ctrl = Get.put(HomeMainPageController());
-  final _buildBody = <Widget>[Home(), Home(), Home(), const Profile()];
+  final _buildBody = <Widget>[Home(), const SearchRestaurant(), Home(), const Profile()];
 
   @override
   Widget build(BuildContext context) {
