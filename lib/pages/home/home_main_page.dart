@@ -18,10 +18,6 @@ class HomeMainPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          elevation: 0,
-          backgroundColor: Colors.white,
-        ),
         body: Obx(() => _buildBody[ctrl.pageIndex.value]),
         bottomNavigationBar: BottomNavigationBar(
           iconSize: 34.sp,
