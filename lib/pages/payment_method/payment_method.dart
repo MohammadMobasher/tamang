@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:tamang/core/settings/app_route.dart';
+import 'package:tamang/core/app_route.dart';
 
 class PaymentMethod extends StatelessWidget {
   const PaymentMethod({super.key});
