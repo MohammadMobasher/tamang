@@ -80,7 +80,7 @@ class AddPaymentCard extends StatelessWidget {
                       horizontal: 25.sp,
                     ),
                     child: Text(
-                      "SIGN IN",
+                      "ADD CARD",
                       style: TextStyle(
                         fontSize: 17.sp,
                         fontWeight: FontWeight.bold,
