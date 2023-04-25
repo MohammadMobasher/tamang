@@ -176,6 +176,9 @@ class Profile extends StatelessWidget {
               thickness: 0.2,
             ),
             MTextMainAndDetailAndPostIcon(
+              onTap: () {
+                Get.toNamed(AppRoute.addSocialAccount);
+              },
               preIcon: Icon(
                 CupertinoIcons.location_solid,
                 size: 24.sp,
