@@ -514,18 +514,430 @@ class Restaurant extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 24.h,
+              Padding(
+                padding: EdgeInsets.only(left: 20.sp, top: 24.sp, bottom: 24.sp),
+                child: SizedBox(
+                  height: 420.h,
+                  child: Column(
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(8.sp),
+                            child: Image.asset(
+                              width: 110.w,
+                              height: 110.h,
+                              "assets/images/food1.png",
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 18.w,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Cookie Sandwich",
+                                style: TextStyle(
+                                  fontSize: 18.sp,
+                                  color: const Color(0xFF010F07),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 6.h,
+                              ),
+                              SizedBox(
+                                width: 204.w,
+                                child: Text(
+                                  "Shortbread, chocolate turtle cookies, and red velvet.",
+                                  style: TextStyle(
+                                    fontSize: 16.sp,
+                                    color: const Color(0xFF010F07),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 12.h,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "\$\$",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFF010F07),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 11.w,
+                                  ),
+                                  Text(
+                                    ". Chinese",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFF010F07),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 64.w,
+                                  ),
+                                  Text(
+                                    "AUD\$10",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFFEEA734),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      const Divider(
+                        color: Color(0xFF979797),
+                        thickness: 0.2,
+                      ),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(8.sp),
+                            child: Image.asset(
+                              width: 110.w,
+                              height: 110.h,
+                              "assets/images/food2.png",
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 18.w,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Cookie Sandwich",
+                                style: TextStyle(
+                                  fontSize: 18.sp,
+                                  color: const Color(0xFF010F07),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 6.h,
+                              ),
+                              SizedBox(
+                                width: 204.w,
+                                child: Text(
+                                  "Shortbread, chocolate turtle cookies, and red velvet.",
+                                  style: TextStyle(
+                                    fontSize: 16.sp,
+                                    color: const Color(0xFF010F07),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 12.h,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "\$\$",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFF010F07),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 11.w,
+                                  ),
+                                  Text(
+                                    ". Chinese",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFF010F07),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 64.w,
+                                  ),
+                                  Text(
+                                    "AUD\$10",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFFEEA734),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      const Divider(
+                        color: Color(0xFF979797),
+                        thickness: 0.2,
+                      ),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(8.sp),
+                            child: Image.asset(
+                              width: 110.w,
+                              height: 110.h,
+                              "assets/images/food3.png",
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 18.w,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Cookie Sandwich",
+                                style: TextStyle(
+                                  fontSize: 18.sp,
+                                  color: const Color(0xFF010F07),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 6.h,
+                              ),
+                              SizedBox(
+                                width: 204.w,
+                                child: Text(
+                                  "Shortbread, chocolate turtle cookies, and red velvet.",
+                                  style: TextStyle(
+                                    fontSize: 16.sp,
+                                    color: const Color(0xFF010F07),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 12.h,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "\$\$",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFF010F07),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 11.w,
+                                  ),
+                                  Text(
+                                    ". Chinese",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFF010F07),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 64.w,
+                                  ),
+                                  Text(
+                                    "AUD\$10",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFFEEA734),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 20.sp),
+                padding: EdgeInsets.symmetric(horizontal: 20.sp),
+                child: Text(
+                  "Sea Foods",
+                  style: TextStyle(
+                    fontSize: 20.sp,
+                    color: const Color(0xFF010F07),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 20.sp, top: 24.sp, bottom: 24.sp),
                 child: SizedBox(
-                  // width: 140.w,
-                  height: 517.h,
-                  child: ListView(
-                    shrinkWrap: false,
-                    scrollDirection: Axis.vertical,
-                    children: [],
+                  height: 420.h,
+                  child: Column(
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(8.sp),
+                            child: Image.asset(
+                              width: 110.w,
+                              height: 110.h,
+                              "assets/images/food4.png",
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 18.w,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Cookie Sandwich",
+                                style: TextStyle(
+                                  fontSize: 18.sp,
+                                  color: const Color(0xFF010F07),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 6.h,
+                              ),
+                              SizedBox(
+                                width: 204.w,
+                                child: Text(
+                                  "Shortbread, chocolate turtle cookies, and red velvet.",
+                                  style: TextStyle(
+                                    fontSize: 16.sp,
+                                    color: const Color(0xFF010F07),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 12.h,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "\$\$",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFF010F07),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 11.w,
+                                  ),
+                                  Text(
+                                    ". Chinese",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFF010F07),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 64.w,
+                                  ),
+                                  Text(
+                                    "AUD\$10",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFFEEA734),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      const Divider(
+                        color: Color(0xFF979797),
+                        thickness: 0.2,
+                      ),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(8.sp),
+                            child: Image.asset(
+                              width: 110.w,
+                              height: 110.h,
+                              "assets/images/food5.png",
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 18.w,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Cookie Sandwich",
+                                style: TextStyle(
+                                  fontSize: 18.sp,
+                                  color: const Color(0xFF010F07),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 6.h,
+                              ),
+                              SizedBox(
+                                width: 204.w,
+                                child: Text(
+                                  "Shortbread, chocolate turtle cookies, and red velvet.",
+                                  style: TextStyle(
+                                    fontSize: 16.sp,
+                                    color: const Color(0xFF010F07),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 12.h,
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "\$\$",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFF010F07),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 11.w,
+                                  ),
+                                  Text(
+                                    ". Chinese",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFF010F07),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 64.w,
+                                  ),
+                                  Text(
+                                    "AUD\$10",
+                                    style: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: const Color(0xFFEEA734),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ),
