@@ -17,6 +17,9 @@ class Profile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
+            SizedBox(
+              height: 24.h,
+            ),
             Padding(
               padding: EdgeInsets.only(left: 34.sp),
               child: Text(
