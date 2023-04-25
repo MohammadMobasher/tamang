@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:tamang/pages/add_social_account/add_social_account.dart';
+import 'package:tamang/pages/profile/add_social_account/add_social_account.dart';
 import 'package:tamang/pages/login/login.dart';
 import 'package:tamang/pages/orders/orders.dart';
 import 'package:tamang/pages/payment_method/add_payment_card/add_payment_card.dart';
